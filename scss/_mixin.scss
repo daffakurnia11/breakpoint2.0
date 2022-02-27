@@ -1,0 +1,136 @@
+@mixin heading1() {
+  font: 600 64px/80px $font-poppins;
+  letter-spacing: 0.01em;
+  color: $color-primary6;
+}
+
+@mixin heading2() {
+  font: 600 56px/70px $font-poppins;
+  letter-spacing: 0.01em;
+  color: $color-primary6;
+}
+
+@mixin heading3() {
+  font: 600 48px/69px $font-poppins;
+  letter-spacing: 0.01em;
+  color: $color-primary6;
+}
+
+@mixin heading4() {
+  font: 600 36px/52px $font-poppins;
+  letter-spacing: 0.01em;
+  color: $color-primary6;
+}
+
+@mixin heading5() {
+  font: 600 20px/28px $font-poppins;
+  letter-spacing: 0.01em;
+  color: $color-primary6;
+}
+
+@mixin heading6() {
+  font: 600 19px/28px $font-poppins;
+  letter-spacing: 0.01em;
+  color: $color-primary6;
+}
+
+@mixin body1() {
+  font: 500 18px/26px $font-poppins;
+  letter-spacing: 0.01em;
+  color: $color-primary6;
+}
+
+@mixin body2() {
+  font: 500 16px/25px $font-poppins;
+  letter-spacing: 0.01em;
+  color: $color-primary6;
+}
+
+@mixin body3() {
+  font: 400 14px/22px $font-poppins;
+  letter-spacing: 0.01em;
+  color: $color-primary6;
+}
+
+@mixin body4() {
+  font: 400 12px/19px $font-poppins;
+  letter-spacing: 0.01em;
+  color: $color-primary6;
+}
+
+@mixin body5() {
+  font: 700 12px/19px $font-poppins;
+  letter-spacing: 0.01em;
+  color: $color-primary6;
+}
+
+@mixin body6() {
+  font: 500 12px/19px $font-poppins;
+  letter-spacing: 0.01em;
+  color: $color-primary6;
+}
+
+@mixin body7() {
+  font: 400 10px/19px $font-poppins;
+  letter-spacing: 0.01em;
+  color: $color-primary6;
+}
+
+@mixin gradient-button() {
+  @include body5();
+  padding: 0.5rem 2rem;
+  background: linear-gradient(
+    93.44deg,
+    $color-primary4 -25.48%,
+    $color-primary3 46.97%,
+    $color-primary2 116.46%
+  );
+  box-shadow: inset 3px 4px 5px $light1, inset -3px -4px 5px $shadow1;
+  border-radius: 18.5px;
+}
+
+@mixin container-topbar($topbar-color) {
+  .state-topbar {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background: $topbar-color;
+    box-shadow: 0px 4px 4px $shadow1, inset -7px 0px 10px $shadow2,
+      inset 7px 4px 10px $light1;
+    .topbar-button-group {
+      position: absolute;
+      top: 50%;
+      right: 1.5rem;
+      z-index: 5;
+      transform: translateY(-50%);
+      .topbar-button {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        content: "";
+        border-radius: 50%;
+        margin: 0 5px;
+      }
+      .topbar-button:nth-of-type(1) {
+        background: $color-primary5;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.19),
+          inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+          inset -1px -1px 2px rgba(0, 0, 0, 0.32);
+      }
+      .topbar-button:nth-of-type(2) {
+        background: $color-primary3;
+        box-shadow: inset -1px -1px 2px rgba(255, 255, 255, 0.24),
+          inset 1px 1px 2px rgba(0, 0, 0, 0.37);
+      }
+      .topbar-button:nth-of-type(3) {
+        background: $color-primary2;
+        box-shadow: inset -1px -1px 2px rgba(255, 255, 255, 0.24),
+          inset 1px 1px 2px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
