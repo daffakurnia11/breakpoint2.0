@@ -77,16 +77,13 @@
 }
 
 @mixin gradient-button() {
-  @include body5();
-  padding: 0.5rem 2rem;
   background: linear-gradient(
-    93.44deg,
+    90deg,
     $color-primary4 -25.48%,
     $color-primary3 46.97%,
     $color-primary2 116.46%
   );
   box-shadow: inset 3px 4px 5px $light1, inset -3px -4px 5px $shadow1;
-  border-radius: 18.5px;
 }
 
 @mixin container-topbar($topbar-color) {
@@ -122,7 +119,11 @@
           inset -1px -1px 2px rgba(0, 0, 0, 0.32);
       }
       .topbar-button:nth-of-type(2) {
-        background: $color-primary3;
+        @if $topbar-color == $color-primary3 {
+          background: $color-primary4;
+        } @else {
+          background: $color-primary3;
+        }
         box-shadow: inset -1px -1px 2px rgba(255, 255, 255, 0.24),
           inset 1px 1px 2px rgba(0, 0, 0, 0.37);
       }
