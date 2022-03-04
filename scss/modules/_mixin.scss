@@ -76,6 +76,12 @@
   color: $color-primary6;
 }
 
+@mixin body8() {
+  font: 600 40px/69px $font-poppins;
+  letter-spacing: -0.04em;
+  color: $color-primary6;
+}
+
 @mixin gradient-button() {
   background: linear-gradient(
     90deg,
