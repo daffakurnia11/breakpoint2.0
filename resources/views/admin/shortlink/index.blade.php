@@ -20,7 +20,7 @@
     <div id="notification" data-flashdata="{{ session('notif') }}"></div>
   @endif
 
-  <h6 class="mb-0 text-uppercase">Daftar Short Link</h6>
+  <h6 class="mb-0 text-uppercase">All Short Links</h6>
   <hr>
   <div class="card">
     <div class="card-body">
@@ -44,7 +44,7 @@
               <td class="align-middle">{{ $link->name }}</td>
               <td class="align-middle">
                 <a href="/{{ $link->short }}" target="_blank">
-                  petrolida.com/{{ $link->short }}
+                  breakpoint.id/{{ $link->short }}
                 </a>
               </td>
               <td class="text-wrap align-middle">

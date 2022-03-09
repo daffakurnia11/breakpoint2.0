@@ -16,13 +16,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::middleware('visited')->group(function () {
-Route::get('/', [PagesController::class, 'index']);
-Route::get('/about', [PagesController::class, 'about']);
-Route::get('/project', [PagesController::class, 'project']);
-Route::get('/package', [PagesController::class, 'package']);
-Route::get('/article', [PagesController::class, 'article']);
-// });
+Route::middleware('visited')->group(function () {
+    Route::get('/', [PagesController::class, 'index']);
+    Route::get('/about', [PagesController::class, 'about']);
+    Route::get('/project', [PagesController::class, 'project']);
+    Route::get('/package', [PagesController::class, 'package']);
+    Route::get('/article', [PagesController::class, 'article']);
+});
 
 Route::get('/login', [AdminController::class, 'login'])->middleware('guest')->name('login');
 Route::post('/login', [AdminController::class, 'authentication']);
@@ -36,9 +36,6 @@ Route::get('/visitor_data', [AdminController::class, 'visitor_data']);
 
 // FOR SHORT LINKS
 Route::get('/{shortlink:short}', [ShortlinkController::class, 'show'])->middleware('visited');
-// Route::fallback(function () {
-//     return view('errors.404');
-// })->middleware('visited');
 Route::fallback(function () {
     return view('errors.404');
-});
+})->middleware('visited');

@@ -2,10 +2,10 @@
 <aside class="sidebar-wrapper" data-simplebar="true">
   <div class="sidebar-header">
     <div>
-      <img src="/img/logo-only.png" class="logo-icon" alt="logo icon">
+      <img src="/img/logo.png" class="logo-icon" alt="logo icon">
     </div>
     <div>
-      <h4 class="logo-text fs-6">Petrolida Admin</h4>
+      <h4 class="logo-text ms-4">BP Admin</h4>
     </div>
     <div class="toggle-icon ms-auto"><i class="bi bi-chevron-double-left"></i>
     </div>
@@ -29,12 +29,12 @@
       <ul class="mm-collapse {{ Request::is('admin/shortlink**') ? 'mm-show' : '' }}" style="">
         <li class="{{ Request::is('admin/shortlink') ? 'mm-active' : '' }}""> 
           <a href="/admin/shortlink"><i class="bi bi-arrow-right-short"></i>
-            Semua Link
+            All Short Links
           </a>
         </li>
         <li class="{{ Request::is('admin/shortlink/create') ? 'mm-active' : '' }}"> 
           <a href="/admin/shortlink/create"><i class="bi bi-arrow-right-short"></i>
-            Buat Link
+            Create Link
           </a>
         </li>
       </ul>

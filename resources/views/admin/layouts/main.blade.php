@@ -35,7 +35,7 @@
   <script src="/vendor/chartjs/js/Chart.min.js"></script>
   <script src="/vendor/chartjs/js/Chart.extension.js"></script>
 
-  <title>{{ $title }} - Petrolida Admin</title>
+  <title>{{ $title }} - BP Admin</title>
 </head>
 
 <body>

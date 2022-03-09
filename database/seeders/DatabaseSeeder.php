@@ -19,8 +19,8 @@ class DatabaseSeeder extends Seeder
 
         $user = new User;
 
-        $user->name     = 'Petrolida Admin';
-        $user->username = 'admin.petrolida2022';
+        $user->name     = 'Daffa Kurnia Fatah';
+        $user->email    = 'daffakurniafatah@breakpoint.id';
         $user->password = Hash::make('123123123');
         $user->roles    = 'Admin';
 

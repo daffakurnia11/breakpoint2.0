@@ -4,7 +4,7 @@
     
   <!--breadcrumb-->
   <div class="page-breadcrumb d-flex align-items-center flex-column flex-md-row mb-3">
-    <div class="breadcrumb-title pe-3 border-0">Selamat Datang, {{ auth()->user()->name }}</div>
+    <div class="breadcrumb-title pe-3 border-0">Welcome, {{ auth()->user()->name }}</div>
     <div class="ms-md-auto me-md-0 mx-auto ps-3">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb mb-0 p-0">
@@ -67,7 +67,7 @@
   </div>
 
   {{-- WEBSITE VISITOR --}}
-  <h6 class="mb-0 text-uppercase">Web Visitor</h6>
+  <h6 class="mb-0 mt-3 text-uppercase">Web Visitor</h6>
   <hr/>
   <div class="row">
     {{-- Visitor Chart --}}
@@ -86,73 +86,73 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <div class="d-flex align-items-center gap-2">
-                  <div>Februari 2022</div>
-                  <div class="ms-auto" id="FebCounter"></div>
+                <div>March 2022</div>
+                <div class="ms-auto" id="MarCounter"></div>
               </div>
             </li>
             <li class="list-group-item">
               <div class="d-flex align-items-center gap-2">
-                  <div>Maret 2022</div>
-                  <div class="ms-auto" id="MarCounter"></div>
+                <div>April 2022</div>
+                <div class="ms-auto" id="AprCounter"></div>
               </div>
             </li>
             <li class="list-group-item">
               <div class="d-flex align-items-center gap-2">
-                  <div>April 2022</div>
-                  <div class="ms-auto" id="AprCounter"></div>
+                <div>May 2022</div>
+                <div class="ms-auto" id="MayCounter"></div>
               </div>
             </li>
             <li class="list-group-item">
               <div class="d-flex align-items-center gap-2">
-                  <div>Mei 2022</div>
-                  <div class="ms-auto" id="MayCounter"></div>
+                <div>June 2022</div>
+                <div class="ms-auto" id="JunCounter"></div>
               </div>
             </li>
             <li class="list-group-item">
               <div class="d-flex align-items-center gap-2">
-                  <div>Juni 2022</div>
-                  <div class="ms-auto" id="JunCounter"></div>
+                <div>July 2022</div>
+                <div class="ms-auto" id="JulCounter"></div>
               </div>
             </li>
             <li class="list-group-item">
               <div class="d-flex align-items-center gap-2">
-                  <div>Juli 2022</div>
-                  <div class="ms-auto" id="JulCounter"></div>
+                <div>August 2022</div>
+                <div class="ms-auto" id="AugCounter"></div>
               </div>
             </li>
             <li class="list-group-item">
               <div class="d-flex align-items-center gap-2">
-                  <div>Agustus 2022</div>
-                  <div class="ms-auto" id="AugCounter"></div>
+                <div>September 2022</div>
+                <div class="ms-auto" id="SepCounter"></div>
+              </div>
+            <li class="list-group-item">
+              <div class="d-flex align-items-center gap-2">
+                <div>October 2022</div>
+                <div class="ms-auto" id="OctCounter"></div>
+              </div>
+            <li class="list-group-item">
+              <div class="d-flex align-items-center gap-2">
+                <div>November 2022</div>
+                <div class="ms-auto" id="NovCounter"></div>
               </div>
             </li>
             <li class="list-group-item">
               <div class="d-flex align-items-center gap-2">
-                  <div>September 2022</div>
-                  <div class="ms-auto" id="SepCounter"></div>
-              </div>
-            <li class="list-group-item">
-              <div class="d-flex align-items-center gap-2">
-                  <div>Oktober 2022</div>
-                  <div class="ms-auto" id="OctCounter"></div>
-              </div>
-            <li class="list-group-item">
-              <div class="d-flex align-items-center gap-2">
-                  <div>November 2022</div>
-                  <div class="ms-auto" id="NovCounter"></div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="d-flex align-items-center gap-2">
-                 <div>Desember 2022</div>
+                 <div>December 2022</div>
                  <div class="ms-auto" id="DecCounter"></div>
               </div>
             </li>
             <li class="list-group-item">
-             <div class="d-flex align-items-center gap-2">
-                <div>Januari 2023</div>
+              <div class="d-flex align-items-center gap-2">
+                <div>January 2023</div>
                 <div class="ms-auto" id="JanCounter"></div>
-             </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex align-items-center gap-2">
+                <div>February 2023</div>
+                <div class="ms-auto" id="FebCounter"></div>
+              </div>
             </li>
           </ul>
         </div>

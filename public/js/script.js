@@ -6,8 +6,8 @@ if (flashdata) {
   if (flashdata == 'Login Failed') {
     Swal.fire({
       icon: 'error',
-      title: 'Access Ditolak!',
-      text: 'Username / Password tidak cocok. Ulangi kembali!',
+      title: flashdata,
+      text: 'Email or password is not valid. Please try again!',
       confirmButtonColor: '#dc3545',
     })
   }
@@ -29,7 +29,7 @@ if (notif) {
       continueDelayOnInactiveTab: false,
       position: 'top right',
       icon: 'bx bx-check-circle',
-      msg: 'Short link berhasil dibuat!'
+      msg: 'Short link has been created!'
     });
   }
   if (notif == "Link updated") {
@@ -38,7 +38,7 @@ if (notif) {
       continueDelayOnInactiveTab: false,
       position: 'top right',
       icon: 'bx bx-check-circle',
-      msg: 'Short link berhasil diubah!'
+      msg: 'Short link has been edited!'
     });
   }
   if (notif == "Link deleted") {
@@ -47,7 +47,7 @@ if (notif) {
       continueDelayOnInactiveTab: false,
       position: 'top right',
       icon: 'bx bx-check-circle',
-      msg: 'Short link berhasil dihapus!'
+      msg: 'Short link has been deleted!'
     });
   }
 }
@@ -84,7 +84,7 @@ $(function () {
     },
     xaxis: {
       // type: 'datetime',
-      categories: ['Februari', 'Maret', 'April', 'Mei', 'Juli', 'Juni', 'Agustus', 'September', 'Oktober', 'November', 'Desember', 'Januari']
+      categories: ['March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December', 'January', 'February']
     },
     tooltip: {
       x: {
@@ -105,18 +105,18 @@ $(function () {
           name: 'Visitor',
           data: value
         }])
-        $('#FebCounter').html(value[0]);
-        $('#MarCounter').html(value[1]);
-        $('#AprCounter').html(value[2]);
-        $('#MayCounter').html(value[3]);
-        $('#JunCounter').html(value[4]);
-        $('#JulCounter').html(value[5]);
-        $('#AugCounter').html(value[6]);
-        $('#SepCounter').html(value[7]);
-        $('#OctCounter').html(value[8]);
-        $('#NovCounter').html(value[9]);
-        $('#DecCounter').html(value[10]);
-        $('#JanCounter').html(value[11]);
+        $('#MarCounter').html(value[0]);
+        $('#AprCounter').html(value[1]);
+        $('#MayCounter').html(value[2]);
+        $('#JunCounter').html(value[3]);
+        $('#JulCounter').html(value[4]);
+        $('#AugCounter').html(value[5]);
+        $('#SepCounter').html(value[6]);
+        $('#OctCounter').html(value[7]);
+        $('#NovCounter').html(value[8]);
+        $('#DecCounter').html(value[9]);
+        $('#JanCounter').html(value[10]);
+        $('#FebCounter').html(value[11]);
       },
       error: function (data) {
         console.log(data)

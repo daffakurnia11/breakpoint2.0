@@ -33,16 +33,16 @@
           <div class="card shadow rounded-0 overflow-hidden">
             <div class="card-body p-4 p-sm-5">
               <h5 class="card-title">Login</h5>
-              <p class="card-text mb-3">Silakan login untuk mendapatkan akses admin!</p>
+              <p class="card-text mb-3">Please login to access the admin!</p>
               <form action="/login" method="POST" class="form-body">
                 @csrf
                 <hr>
                 <div class="row g-3">
                   <div class="col-12">
-                    <label for="username" class="form-label">Username</label>
+                    <label for="email" class="form-label">Email</label>
                     <div class="ms-auto position-relative">
                       <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i class="bi bi-envelope-fill"></i></div>
-                      <input type="text" class="form-control radius-30 ps-5" name="username" id="username" placeholder="Username">
+                      <input type="text" class="form-control radius-30 ps-5" name="email" id="email" placeholder="Email">
                     </div>
                   </div>
                   <div class="col-12">

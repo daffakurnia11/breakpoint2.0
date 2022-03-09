@@ -21,15 +21,15 @@ class AdminController extends Controller
     public function authentication(Request $request)
     {
         $credentials = $request->validate([
-            'username'  => 'required',
+            'email'  => 'required',
             'password'  => 'required'
         ]);
 
         if (Auth::attempt($credentials)) {
             return redirect('/admin');
+        } else {
+            return back()->with('message', 'Login Failed');
         }
-
-        return back()->with('message', 'Login Failed');
     }
 
     public function logout(Request $request)
@@ -43,12 +43,9 @@ class AdminController extends Controller
         return redirect('/login')->with('message', 'Logout Success');
     }
 
-
-
     public function visitor_data()
     {
         $data = [];
-        $data[] = Visitor::whereMonth('created_at', '=', '2')->count();
         $data[] = Visitor::whereMonth('created_at', '=', '3')->count();
         $data[] = Visitor::whereMonth('created_at', '=', '4')->count();
         $data[] = Visitor::whereMonth('created_at', '=', '5')->count();
@@ -60,6 +57,7 @@ class AdminController extends Controller
         $data[] = Visitor::whereMonth('created_at', '=', '11')->count();
         $data[] = Visitor::whereMonth('created_at', '=', '12')->count();
         $data[] = Visitor::whereMonth('created_at', '=', '1')->count();
+        $data[] = Visitor::whereMonth('created_at', '=', '2')->count();
         return json_encode($data);
     }
 
