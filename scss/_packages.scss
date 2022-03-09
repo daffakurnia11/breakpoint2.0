@@ -6,10 +6,11 @@
       margin: auto;
       display: flex;
       align-items: center;
-      margin-bottom: 71px;
-      @media screen and (max-width: 576px) {
+      @media screen and (max-width: 992px) {
         @include heading5();
-        margin-bottom: 47px;
+      }
+      @media screen and (max-width: 576px) {
+        @include body1();
       }
       .bestselling-star {
         width: 80px;
@@ -37,13 +38,16 @@
           width: fit-content;
           display: flex;
           align-items: center;
-          @media screen and (max-width: 576px) {
+          @media screen and (max-width: 992px) {
             @include heading5();
             color: $color-primary3;
-            margin-bottom: 39px;
             margin-top: 34px;
             display: flex;
             align-items: center;
+          }
+          @media screen and (max-width: 576px) {
+            @include body1();
+            color: $color-primary3;
           }
         }
         .content-star {
@@ -76,13 +80,9 @@
       align-items: center;
       width: fit-content;
       margin: auto;
-      margin-top: 145px;
-      margin-bottom: 75px;
       @media screen and (max-width: 576px) {
         @include body1();
         color: $color-primary6;
-        margin-top: 74px;
-        margin-bottom: 56px;
       }
       .allpackage-vector {
         width: 59.54px;
@@ -105,7 +105,6 @@
         border-radius: 20px;
         overflow: hidden;
         margin: 1rem;
-        margin-bottom: 160px;
         padding: calc(1rem + 30px) 1.5rem 1rem;
         &::before {
           @include gradient-button();
@@ -235,71 +234,38 @@
         margin-bottom: 40px;
       }
     }
-    .all {
-      margin-bottom: 30px;
-      .container-state {
+    .state-container {
+      border-radius: 25px;
+      overflow: hidden;
+      .state-futures {
         .futures-topbar {
-          width: 100%;
-          height: 63px;
-          top: 0;
-          left: 0;
-          right: 0;
-          content: "";
-          background-color: $color-primary5;
-          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1),
-            inset -4px 1px 10px rgba(0, 0, 0, 0.05), inset 6px 6px 7px #f2fbf4;
-          border-radius: 20px;
-          .topbar-button {
-            margin: 10px 16px;
-            z-index: 5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 43px;
-            height: 43px;
-            content: "";
-            border-radius: 50%;
+          flex-shrink: 0;
+          flex-grow: 0;
+          width: 43px;
+          height: 43px;
+          border-radius: 50%;
+          background-color: $color-primary4;
+          box-shadow: inset -1px -1px 2px rgba(255, 255, 255, 0.24),
+            inset 1px 1px 2px rgba(0, 0, 0, 0.37);
+          &.show {
             background-color: $color-primary2;
-          }
-          .futures-heading {
-            display: flex;
-            text-align: start;
-            @include body1();
-            color: #000;
-            z-index: 5;
-            margin-top: -8%;
-            margin-left: 86px;
-          }
-          .topbar-button1 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 10px 16px;
-            z-index: 5;
-            width: 43px;
-            height: 43px;
-            content: "";
-            border-radius: 50%;
-            background-color: $color-primary4;
+            box-shadow: inset -1px -1px 2px rgba(255, 255, 255, 0.24),
+              inset 1px 1px 2px rgba(0, 0, 0, 0.37);
           }
         }
+        @include body1();
+        color: $color-primary1;
+        padding: 1.25rem;
+        background-color: $color-primary5;
       }
-      .container-featcont {
-        width: 100%;
-        max-width: 100%;
-        height: fit-content;
-        margin-top: -10%;
-        border-radius: 25px;
+      .futures-list {
+        @include body3();
+        color: $color-primary5;
+        text-align: justify;
+        padding: 1rem 1.5rem;
         background: rgba(255, 255, 255, 0.09);
         box-shadow: inset -7px 0px 10px rgba(0, 0, 0, 0.5),
           inset 7px 4px 10px rgba(255, 255, 255, 0.25);
-        .futures-content {
-          .futures-list {
-            @include body3();
-            color: $color-primary5;
-            margin-left: 28px;
-          }
-        }
       }
     }
   }
