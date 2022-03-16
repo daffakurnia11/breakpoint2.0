@@ -1,12 +1,13 @@
 nav.navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    // background-color: $color-primary1;
+    background-color: $color-primary1;
+    z-index: 99;
     .navbar-toggler {
         &-button {
-            @include heading5();
+            @include body5();
             position: relative;
             &::before {
                 position: absolute;
@@ -38,7 +39,7 @@ nav.navbar {
                 margin: auto;
             }
             .nav-link {
-                @include body2();
+                @include body5();
                 &.active {
                     position: relative;
                     &::before {

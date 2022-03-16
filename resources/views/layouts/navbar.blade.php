@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg shadow rounded">
   <div class="container">
     <a class="navbar-brand" href="#">
       <img src="img/logo.png" alt="" width="55">
