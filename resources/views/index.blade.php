@@ -75,6 +75,11 @@
                 <span class="topbar-button"></span>
               </div>
             </div>
+            <div class="offers-page">
+              <i class="page-arrow fa-solid fa-caret-left"></i>
+              <span class="page-number">1 of 4</span>
+              <i class="page-arrow fa-solid fa-caret-right"></i>
+            </div>
           </div>
         </div>
         <div class="col-md-3 col-xl-4 order-1 order-md-2">

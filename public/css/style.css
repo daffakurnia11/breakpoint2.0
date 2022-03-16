@@ -590,6 +590,27 @@ header#home .header-img {
   color: #0c1523;
 }
 
+#homeOffers .offers-page {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#homeOffers .offers-page .page-arrow {
+  font-size: 16px;
+  color: #3d5aa5;
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+#homeOffers .offers-page .page-number {
+  font: 500 16px/25px "Poppins", sans-serif;
+  letter-spacing: 0.01em;
+  color: #fff;
+  color: #0c1523;
+}
+
 #homeOffers .offers-mascot {
   position: absolute;
   top: -30px;
@@ -868,7 +889,7 @@ header#home .header-img {
   overflow: hidden;
   position: relative;
   margin: 1rem;
-  padding: calc(1rem + 30px) 1.5rem 1rem;
+  padding: calc(1rem + 30px) 1.5rem 5rem;
 }
 
 #homeRecommended .recommended-package::before {
@@ -940,6 +961,10 @@ header#home .header-img {
 }
 
 #homeRecommended .recommended-package .package-button {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
   background: linear-gradient(90deg, #6bbfa4 -25.48%, #3d5aa5 46.97%, #ea4d4e 116.46%);
   box-shadow: inset 3px 4px 5px rgba(255, 255, 255, 0.3), inset -3px -4px 5px rgba(0, 0, 0, 0.3);
   font: 700 12px/19px "Poppins", sans-serif;
