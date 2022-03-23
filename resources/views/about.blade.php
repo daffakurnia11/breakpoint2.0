@@ -174,14 +174,14 @@
 <section id="aboutFaq">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-xl-3 col-lg-4 col-md-5">
+      <div class="col-xxl-3 col-lg-4 col-md-5">
         <h2 class="faq-title text-center text-sm-start mb-5">
           Frequently <br class="d-none d-md-block" />Asked
           <br class="d-sm-none d-md-block" />Questions
           <img src="svg/double-star.svg" class="faq-title-star" alt="" />
         </h2>
       </div>
-      <div class="col-xl-7 col-lg-8 col-md-7">
+      <div class="col-xxl-7 col-lg-8 col-md-7">
         <div class="faq-container mb-4">
           <h3
             class="faq-question d-flex align-items-center"
@@ -191,9 +191,7 @@
             aria-expanded="false"
             aria-controls="questionOne"
           >
-            <div
-              class="faq-question-indicator show d-flex justify-content-center align-items-center me-3"
-            >
+            <div class="faq-question-indicator show d-flex justify-content-center align-items-center me-3">
               -
             </div>
             Can you explain your flow of work? I don’t quite understand.

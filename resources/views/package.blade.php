@@ -249,8 +249,8 @@
             aria-expanded="false"
             aria-controls="collapseExample1"
           >
-            <div class="futures-topbar show d-flex justify-content-center align-items-center me-3">
-              -
+            <div class="futures-topbar d-flex justify-content-center align-items-center me-3">
+              +
               </div>
               Basic Features
               </h3>
@@ -268,8 +268,8 @@
             aria-expanded="false"
             aria-controls="collapseExample2"
           >
-            <div class="futures-topbar show d-flex justify-content-center align-items-center me-3">
-              -
+            <div class="futures-topbar d-flex justify-content-center align-items-center me-3">
+              +
               </div>
               Accesibility Features
               </h3>
@@ -290,8 +290,8 @@
             aria-expanded="false"
             aria-controls="collapseExample3"
           >
-            <div class="futures-topbar show d-flex justify-content-center align-items-center me-3">
-              -
+            <div class="futures-topbar d-flex justify-content-center align-items-center me-3">
+              +
               </div>
               Content Management
               </h3>
@@ -310,8 +310,8 @@
             aria-expanded="false"
             aria-controls="collapseExample4"
           >
-            <div class="futures-topbar show d-flex justify-content-center align-items-center me-3">
-              -
+            <div class="futures-topbar d-flex justify-content-center align-items-center me-3">
+              +
               </div>
               Mini Classroom Features
               </h3>
@@ -330,8 +330,8 @@
             aria-expanded="false"
             aria-controls="collapseExample5"
           >
-            <div class="futures-topbar show d-flex justify-content-center align-items-center me-3">
-              -
+            <div class="futures-topbar d-flex justify-content-center align-items-center me-3">
+              +
               </div>
               Internet of Things Project
               </h3>
@@ -348,8 +348,8 @@
             aria-expanded="false"
             aria-controls="collapseExample6"
           >
-            <div class="futures-topbar show d-flex justify-content-center align-items-center me-3">
-              -
+            <div class="futures-topbar d-flex justify-content-center align-items-center me-3">
+              +
               </div>
               Quiz and Exam Platform
               </h3>
@@ -368,8 +368,8 @@
             aria-expanded="false"
             aria-controls="collapseExample7"
           >
-            <div class="futures-topbar show d-flex justify-content-center align-items-center me-3">
-              -
+            <div class="futures-topbar d-flex justify-content-center align-items-center me-3">
+              +
               </div>
               E-Commerce Features
               </h3>
